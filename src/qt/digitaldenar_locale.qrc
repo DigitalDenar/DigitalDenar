@@ -1,0 +1,29 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/digitaldenar_bg.qm</file>
+        <file alias="ca">locale/digitaldenar_ca.qm</file>
+        <file alias="cs">locale/digitaldenar_cs.qm</file>
+        <file alias="da">locale/digitaldenar_da.qm</file>
+        <file alias="de">locale/digitaldenar_de.qm</file>
+        <file alias="en">locale/digitaldenar_en.qm</file>
+        <file alias="en_US">locale/digitaldenar_en_US.qm</file>
+        <file alias="es">locale/digitaldenar_es.qm</file>
+        <file alias="fi">locale/digitaldenar_fi.qm</file>
+        <file alias="fr_FR">locale/digitaldenar_fr_FR.qm</file>
+        <file alias="it">locale/digitaldenar_it.qm</file>
+        <file alias="ja">locale/digitaldenar_ja.qm</file>
+        <file alias="ko_KR">locale/digitaldenar_ko_KR.qm</file>
+        <file alias="nl">locale/digitaldenar_nl.qm</file>
+        <file alias="pl">locale/digitaldenar_pl.qm</file>
+        <file alias="pt">locale/digitaldenar_pt.qm</file>
+        <file alias="pt_BR">locale/digitaldenar_pt_BR.qm</file>
+        <file alias="ro_RO">locale/digitaldenar_ro_RO.qm</file>
+        <file alias="ru">locale/digitaldenar_ru.qm</file>
+        <file alias="sk">locale/digitaldenar_sk.qm</file>
+        <file alias="sv">locale/digitaldenar_sv.qm</file>
+        <file alias="tr">locale/digitaldenar_tr.qm</file>
+        <file alias="uk">locale/digitaldenar_uk.qm</file>
+        <file alias="zh_CN">locale/digitaldenar_zh_CN.qm</file>
+        <file alias="zh_TW">locale/digitaldenar_zh_TW.qm</file>
+    </qresource>
+</RCC>

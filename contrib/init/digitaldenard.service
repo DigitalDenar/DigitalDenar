@@ -1,0 +1,26 @@
+[Unit]
+Description=DigitalDenar's distributed currency daemon
+After=network.target
+
+[Service]
+User=digitaldenar
+Group=digitaldenar
+
+Type=forking
+PIDFile=/var/lib/digitaldenard/digitaldenard.pid
+
+ExecStart=/usr/bin/digitaldenard -daemon -pid=/var/lib/digitaldenard/digitaldenard.pid \
+          -conf=/etc/digitaldenar/digitaldenar.conf -datadir=/var/lib/digitaldenard
+
+ExecStop=-/usr/bin/digitaldenar-cli -conf=/etc/digitaldenar/digitaldenar.conf \
+         -datadir=/var/lib/digitaldenard stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

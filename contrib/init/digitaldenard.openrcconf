@@ -1,0 +1,26 @@
+# /etc/conf.d/digitaldenard: config file for /etc/init.d/digitaldenard
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/digitaldenar/digitaldenar.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/digitaldenard"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/digitaldenard.pid"
+
+# Where to write digitaldenard data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/digitaldenard"
+
+# User and group to own digitaldenard process
+#BITCOIND_USER="digitaldenar"
+#BITCOIND_GROUP="digitaldenar"
+
+# Path to digitaldenard executable
+#BITCOIND_BIN="/usr/bin/digitaldenard"
+
+# Nice value to run digitaldenard under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

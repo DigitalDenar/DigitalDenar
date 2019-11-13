@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=DigitalDenar
+Comment=DigitalDenar P2P Cryptocurrency
+Exec=digitaldenar-qt %u
+Terminal=false
+Type=Application
+Icon=digitaldenar128
+MimeType=x-scheme-handler/digitaldenar;
+Categories=Office;Finance;
+Name[en_US]=digitaldenar-qt.desktop
