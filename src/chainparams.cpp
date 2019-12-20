@@ -96,7 +96,7 @@ public:
         nMaturity = 9;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 50000000 * COIN; // 50 million max supply
-        nLastPOWBlock = 50201;
+        nLastPOWBlock = 50200;
         nModifierUpdateBlock = 1;
 
         const char* pszTimestamp = "12/11/2019 Bitcoin, blockchain jobs remain unfilled as interest drops off";
