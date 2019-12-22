@@ -42,14 +42,14 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x0000077f05d6a3eb7684ef903e507802009038124ca73798910d56bea9941755"))
+    	(0, uint256("0x0000077f05d6a3eb7684ef903e507802009038124ca73798910d56bea9941755"))
 	(1, uint256("0x503a5d03491e1e5a3310a69dcb4063c08f64e2e8fb1612de1526a72e84f8d249"));
-	
+	(50201, uint256("0xdf4eead5f506bf7c13921cd45a5bc19e5dfd25bd1dd57582b9743610e0f135c1"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-	1573578476, // * UNIX timestamp of last checkpoint block
-    0,          // * total number of transactions between genesis and last checkpoint
+	1576834772, // * UNIX timestamp of last checkpoint block
+    61654,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -118,7 +118,9 @@ public:
         assert(hashGenesisBlock == uint256("0x0000077f05d6a3eb7684ef903e507802009038124ca73798910d56bea9941755"));
         assert(genesis.hashMerkleRoot == uint256("0x4e20335014b1ad718b3d5ab0c4b7737517acd0be5a9243d82077e1fb50d8ab1e"));
 
-        vSeeds.push_back(CDNSSeedData("seed1", "seed.digitaldenar.website"));
+        vSeeds.push_back(CDNSSeedData("seed1", "seed1.digitaldenar.website"));
+	vSeeds.push_back(CDNSSeedData("seed2", "seed2.digitaldenar.website"));
+	vSeeds.push_back(CDNSSeedData("seed3", "seed3.digitaldenar.website"));
 
         // DigitalDenar addresses start with 'D'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
